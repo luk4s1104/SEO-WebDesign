@@ -5,6 +5,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="formStylesheet.css">
     <title>Creator</title>
+
+    <style>
+        
+        body {
+            background-color: #121214;
+            color: #ffffff;
+            font-family: sans-serif;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #dfb15b;
+            margin-bottom: 20px;
+        }
+
+        #formBox {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #1a1a1e;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #29292e;
+        }
+
+        .CharacterInfoBox {
+            margin-bottom: 35px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #29292e;
+        }
+
+        .CharacterInfoBox h2 {
+            color: #dfb15b;
+            margin-top: 0;
+            border-bottom: 2px solid #dfb15b;
+            padding-bottom: 5px;
+            font-size: 1.3rem;
+        }
+
+        #formCharacterInfoBox {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .characterInfoInput {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .characterInfoInput label {
+            font-weight: bold;
+            color: #e1e1e6;
+        }
+
+        .characterInfoInput input {
+            background-color: #121214;
+            border: 1px solid #29292e;
+            color: #fff;
+            padding: 8px;
+            border-radius: 4px;
+            width: 250px;
+        }
+
+        #formCharacterStatusBox {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .statusRow {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .statusLabel {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 150px;
+        }
+
+        .statusLabel label {
+            font-weight: bold;
+        }
+
+        .statusRow input {
+            background-color: #121214;
+            border: 1px solid #29292e;
+            color: #fff;
+            padding: 6px;
+            border-radius: 4px;
+            width: 60px;
+            text-align: center;
+        }
+
+        .columnLabel {
+            width: 60px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #a8a8b3;
+            font-weight: bold;
+        }
+
+        #bottomSection {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 25px;
+        }
+
+        #equipmentSlotsGrid {
+            display: grid;
+            grid-template-columns: repeat(2, 70px);
+            gap: 12px;
+        }
+
+        .slot {
+            width: 70px;
+            height: 70px;
+            background-color: #29292e;
+            border: 1px dashed #dfb15b;
+            border-radius: 6px;
+        }
+
+        #extraInfoBox {
+            flex-grow: 1;
+            max-width: 450px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .textareaGroup {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .textareaGroup label {
+            font-size: 0.9rem;
+            color: #dfb15b;
+            font-weight: bold;
+        }
+
+        .textareaGroup textarea {
+            background-color: #121214;
+            border: 1px solid #29292e;
+            color: #fff;
+            padding: 8px;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+            resize: none;
+        }
+    </style>
+
 </head>
 <body>
     <h1>INSERT YOUR CHARACTER INFO</h1>
